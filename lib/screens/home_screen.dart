@@ -19,12 +19,12 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: AppStyle.mainColor,
       appBar: AppBar(
         elevation: 0.0,
-        title: const Text("NotesApp"),
+        title: const Text("Notes App"),
         centerTitle: true,
         backgroundColor: AppStyle.mainColor,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(8.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,18 +43,23 @@ class _HomeScreenState extends State<HomeScreen> {
                     return GridView(
                       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
                       children: snapshot.data!.docs
-                          .map((note) => NoteCard((){
+                          .map((note) => NoteCard(() {
                             Navigator.push(context, MaterialPageRoute(builder: (context) => NoteManagerScreen(note)));
                           }, note))
                           .toList(),
                       );
                   }
-            
-                  return Text(
-                    "There's no Notes",
-                    style: GoogleFonts.nunito(
-                      color: Colors.white
-                    ));
+
+                  return Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "There's no notes! Add a new one using the + button",
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.nunito(
+                        color: Colors.white,
+                        fontSize: 25
+                      )),
+                  );
                 },
               ),
             )

@@ -16,10 +16,18 @@ Widget NoteCard(Function()? onTap, QueryDocumentSnapshot doc) {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(doc["note_title"], style: AppStyle.mainTitle, overflow: TextOverflow.ellipsis),
-          const SizedBox(height: 4.0,),
-          Text(doc["note_date"], style: AppStyle.dateTitle),
           const SizedBox(height: 8.0,),
-          Text(doc["note_preview"], style: AppStyle.mainContent)
+          Expanded(
+            child: Text(doc["note_preview"], style: AppStyle.mainContent)
+          ),
+          const SizedBox(height: 4.0,),
+          Align(
+            alignment: Alignment.centerRight,
+            child: Text(
+              doc["note_date"],
+              style: AppStyle.dateTitle
+            ),
+          ),
         ],        
       ),
     ),
