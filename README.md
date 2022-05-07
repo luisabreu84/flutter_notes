@@ -9,4 +9,4 @@ New Features:
 - Allow to create and edit with rich content using flutter_quill package
 
 Important: 
-- Change setting to work with your own Firebase instance. 
+- Change setting to use your own Firebase instance. https://youtu.be/fL8Ujzh5DQc?t=534
