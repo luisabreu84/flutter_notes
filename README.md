@@ -1,7 +1,7 @@
 # flutter_notes
 Flutter - Notes app using Firebase
 
-Extend basic sample posted by 'Doctor code' on YouTube 
+Extend sample posted by 'Doctor code' on YouTube / all credits for 'Doctor Code'
 https://www.youtube.com/watch?v=fL8Ujzh5DQc&t=7s
 
 New features: 
