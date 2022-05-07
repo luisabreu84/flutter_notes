@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "562365054569",
+    "project_id": "ssaflutternotes",
+    "storage_bucket": "ssaflutternotes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562365054569:android:716c41d44e73583c74ecf8",
+        "android_client_info": {
+          "package_name": "com.example.notes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562365054569-fdbd4g2sbovl42itftv3v3ku17vjivp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDykfmFd3LKjuoGAcGDlwbO-epqdW42wUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "562365054569-fdbd4g2sbovl42itftv3v3ku17vjivp8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
