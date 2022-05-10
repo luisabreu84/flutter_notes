@@ -291,19 +291,17 @@ Widget NoteContentEditorv2(BuildContext context, quilllib.QuillController? edito
 Widget getNoteEditorToolbar(quilllib.QuillController? editorController) {
   var toolbar = quilllib.QuillToolbar.basic(
       controller: editorController!,
-      // provide a callback to enable picking images from device.
-      // if omit, "image" button only allows adding images from url.
-      // same goes for videos.
-      //onImagePickCallback: _onImagePickCallback,
-      //onVideoPickCallback: _onVideoPickCallback,
-      // uncomment to provide a custom "pick from" dialog.
-      // mediaPickSettingSelector: _selectMediaPickSetting,
       showAlignmentButtons: true,
       showStrikeThrough: false,
       showColorButton: false,
       showBackgroundColorButton: false,
       showListCheck: false,
       showIndent: false,
+      showCameraButton: false,
+      showImageButton: false,
+      showLink: false,
+      showVideoButton: false,
+      showCodeBlock: false,
     );
 
   return SingleChildScrollView(
